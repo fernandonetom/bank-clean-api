@@ -1,5 +1,5 @@
-import { FieldError, IValidator } from "../interfaces/IValidator";
-import { validateSync } from "class-validator";
+import { FieldError, IValidator } from '../interfaces/IValidator';
+import { validateSync } from 'class-validator';
 
 export abstract class ClassValidator<TData extends object>
   implements IValidator<TData>
@@ -13,7 +13,7 @@ export abstract class ClassValidator<TData extends object>
 
       validationResult.forEach((error) => {
         this.errors[error.property] = Object.values(error.constraints).map(
-          (value) => value
+          (value) => value,
         );
       });
 

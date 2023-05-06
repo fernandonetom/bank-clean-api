@@ -3,7 +3,7 @@ export abstract class Entity {
   private createdAt: Date;
 
   constructor() {
-    this.id = "gerar-id";
+    this.id = 'gerar-id';
     this.createdAt = new Date();
   }
 

@@ -1,7 +1,7 @@
-import UserValidatorFactory, { UserRules } from "../validators/UserValidator";
-import { IUserPropsDto } from "../dtos/UserDto";
-import { Entity } from "../../@shared/entities/Entity";
-import { EntityValidationException } from "../../@shared/exceptions/EntityValidationException";
+import UserValidatorFactory, { UserRules } from '../validators/UserValidator';
+import { IUserPropsDto } from '../dtos/UserDto';
+import { Entity } from '../../@shared/entities/Entity';
+import { EntityValidationException } from '../../@shared/exceptions/EntityValidationException';
 
 export class User extends Entity {
   private name: string;
@@ -32,7 +32,7 @@ export class User extends Entity {
         name: this.name,
         email: this.email,
         password: this.password,
-      })
+      }),
     );
 
     if (!isValid) {

@@ -1,6 +1,6 @@
-import { IsEmail, IsNotEmpty, IsString, Min, MinLength } from "class-validator";
-import { ClassValidator } from "../../@shared/validators/ClassValidator";
-import { IUserPropsDto } from "../dtos/UserDto";
+import { IsEmail, IsNotEmpty, IsString, Min, MinLength } from 'class-validator';
+import { ClassValidator } from '../../@shared/validators/ClassValidator';
+import { IUserPropsDto } from '../dtos/UserDto';
 
 export class UserRules {
   @IsString()

@@ -1,4 +1,4 @@
-import { FieldError } from "../interfaces/IValidator";
+import { FieldError } from '../interfaces/IValidator';
 
 export class EntityValidationException {
   errors: FieldError;
